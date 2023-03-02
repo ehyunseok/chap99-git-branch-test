@@ -1,0 +1,17 @@
+package com.greedy.section01.advice.annotation.aop;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AfterReturningAttendingAdvice {
+	
+	@AfterReturning(pointcut="", returning="")
+	public void afterReturningAttending(JoinPoint joinPoint) {
+		
+	}
+	
+}

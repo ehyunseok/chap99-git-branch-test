@@ -1,0 +1,21 @@
+package com.greedy.section01.advice.annotation.aop;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class BeforeAttendingAdvice {
+	
+	/* ^포인트컷^으로 패치한 실행 시점을 ^조인포인트^라고 한다.
+	 * ^포인트컷^은 여러 조인포인트를 매치하기 위해 지정한 표현식이고, 이렇게 매치된 조인포인트에서 해야 할 일이 ^어드바이스^이다. */
+	@Before("excecution(* com.greedy.section01.advice.annotation..*(..))")
+	public void beforeAttending(JoinPoint joinpoint) {
+		
+	}
+	
+	
+	
+}

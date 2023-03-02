@@ -1,0 +1,5 @@
+package com.greedy.section02.locale.javaconfig.config;
+
+public class contextConfiguration {
+
+}

@@ -1,0 +1,25 @@
+package com.greedy.section01.xmlconfig;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		/* BeanFactory란?
+		 * 스프링 컨테이너의 최상위 컨테이너이며 ApplicationContext와 함께 스프링 컨테이너라고 한다.
+		 * Bean의 생성과 설정, 관리 등의 역할을 맡고 있다.
+		 *  */
+		
+		/* MemberDTO(POJO) 클래스와 spring-context(Configuration) XML 설정 정보를 이용해서
+		 * 빈을 등록하고 생성하는 예제 */
+		
+		/* ApplicationContext 의 하위 구현체인  GenericXmlApplicationContext는
+		 * XML 설정 메타 정보를 읽어와서 BeanFactory를 동작시킨다. */
+		ApplicationContext context 
+		= new GenericXmlApplicationContext("com/greedy/section01/xmlconfig/spring-context.xml");
+		
+		
+		
+		
+	}
+
+}

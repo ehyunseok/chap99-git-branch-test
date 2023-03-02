@@ -1,0 +1,19 @@
+package com.greedy.section01.advice.annotation.aop;
+
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AroundAttendingAdvice {
+
+	@Around()
+	
+	/* void형 메서드로 작성하고 표현식을 작성한다. 메서드이 이름이 포인트컷의 이름이 된다. */
+	@Pointcut("execution(* com.greedy.section01.advice.annotation..*(..))")
+	private void studentAroundPointcut() {
+		
+	}
+}

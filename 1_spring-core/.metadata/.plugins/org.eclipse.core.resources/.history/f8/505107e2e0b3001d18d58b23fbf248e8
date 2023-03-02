@@ -1,0 +1,45 @@
+package com.greedy.seciton01.properties.javaconfig.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
+
+import com.greedy.seciton01.properties.javaconfig.Beverage;
+import com.greedy.seciton01.properties.javaconfig.Bread;
+import com.greedy.seciton01.properties.javaconfig.Product;
+import com.greedy.seciton01.properties.javaconfig.ShoppingCart;
+
+
+
+
+@Configuration
+@PropertySource("product-info.properties")
+public class ContextConfiguration {
+
+	@Bean
+	public Product carpBread() {
+		
+		return new Bread("붕어빵", 2000, new java.util.Date());
+	}
+	
+	@Bean
+	public Product milk() {
+		
+		return new Beverage("딸기우유", 1500, 500);
+	}
+	
+	@Bean
+	public Product water() {
+		
+		return new Beverage("지리산암반수", 1000, 500);
+	}
+	
+	@Bean
+	@Scope("prototype")			// singleton에서 prototype으로 변경함
+	public ShoppingCart cart() {
+		
+		return new ShoppingCart();
+	}
+	
+}

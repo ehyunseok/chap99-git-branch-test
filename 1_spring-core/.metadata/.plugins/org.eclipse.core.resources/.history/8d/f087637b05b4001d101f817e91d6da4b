@@ -1,0 +1,20 @@
+package com.greedy.section01.advice.annotation.aop;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AfterReturningAttendingAdvice {
+	
+	/* @AfterReturning은 메소드 정상 수행 후 반환이므로 반환값을 참조할 수 있다.
+	 * returning 속성에 작성한 이름으로 매개변수에 Object 객체를 선언한다.
+	 * JoinPoint는 반드시 첫번째 매개변수로 선언해야 한다. */
+	@AfterReturning(pointcut="execution(* com.greedy.section01.advice.annotation..*(..))", returning="result")
+	public void afterReturningAttending(JoinPoint joinPoint, Object result) {
+		
+	}
+	
+}

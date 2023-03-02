@@ -1,0 +1,5 @@
+package com.greedy.section01.singleton.javaconfig.config;
+
+public class ContextConfiguration {
+
+}

@@ -1,0 +1,10 @@
+package com.greedy.section02.javaconfig;
+
+import org.springframework.context.annotation.Configuration;
+
+/* 이 클래스가 설정 메타 정보를 가지고 있다는 의미의 어노테이션
+ * 컨테이너를 생성할 시 해당 어노테이션이 달린 클래스를 먼저 인식하여 컨테이너를 설정한다. */
+@Configuration
+public class ContextConfiguration {
+
+}

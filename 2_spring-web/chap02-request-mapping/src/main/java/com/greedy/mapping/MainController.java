@@ -1,0 +1,18 @@
+package com.greedy.mapping;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MainController {
+
+	
+	@RequestMapping("/")	// << 슬래시는 기본 요청을 의미한다. 
+	public String main() {
+		
+		return "main";
+		
+	}
+		
+	
+}

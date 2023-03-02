@@ -1,0 +1,8 @@
+package com.greedy.section01.advice.annotation.aop;
+
+public class AfterThrowingAttendingAdvice {
+
+	
+	
+	
+}
