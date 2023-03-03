@@ -4,8 +4,8 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.greedy</groupId>
-	<artifactId>parameter</artifactId>
-	<name>chap03-handler-method-parameter</name>
+	<artifactId>file</artifactId>
+	<name>chap07-file-upload</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	
